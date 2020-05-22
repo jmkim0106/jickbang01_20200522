@@ -37,7 +37,10 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                Room clickedRoom = rooms.get(position);
+
                 Intent myIntent = new Intent(mContext, DetailRoomActivity.class);
+                myIntent.putExtra("room", clickedRoom);
 
                 startActivity(myIntent);
 

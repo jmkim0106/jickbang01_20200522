@@ -1,9 +1,8 @@
 package com.example.jickbang01_20200522;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
+
+import androidx.databinding.DataBindingUtil;
 
 import com.example.jickbang01_20200522.databinding.ActivityDetailRoomBinding;
 

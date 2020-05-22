@@ -33,6 +33,18 @@ public class MainActivity extends BaseActivity {
     @Override
     public void setupEvents() {
 
+        binding.roomListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                rooms.remove(position);
+
+                mRoomAdapter.notifyDataSetChanged();
+
+                return true;
+            }
+        });
+
         binding.roomListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

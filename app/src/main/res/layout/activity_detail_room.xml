@@ -23,6 +23,7 @@
             android:padding="25dp">
 
             <TextView
+                android:id="@+id/priceTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
@@ -30,6 +31,7 @@
                 android:text="2억8,500" />
 
             <TextView
+                android:id="@+id/descTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="설명이 들어올 자리"
@@ -64,6 +66,7 @@
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/addressTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
@@ -78,6 +81,7 @@
                 android:background="#efefef"/>
 
             <LinearLayout
+                android:id="@+id/floorTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -137,6 +141,7 @@
                 android:layout_weight="1" />
 
             <TextView
+                android:id="@+id/phoneNumTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -144,6 +149,7 @@
                 android:text="010-1234-6789"/>
 
             <Button
+                android:id="@+id/dialBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="전화 걸기"/>
@@ -156,6 +162,7 @@
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/closeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="닫기"/>
